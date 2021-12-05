@@ -1,7 +1,5 @@
 # LDC&MGM 论文仿真数据集说明及算法参数设置
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zzh8829/yolov3-tf2/blob/master/colab_gpu.ipynb)
-
 This repo provides a clean implementation of LDC algorithm using all the best practices.
 
 ## 仿真数据集
