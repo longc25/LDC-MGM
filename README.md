@@ -13,6 +13,8 @@ or you can install LDC package directly in pypi.com. using:
 
 pip install DensityClust==1.0.7
 
+# Usage
+
 
 # Citation
 If you use this code in a scientific publication, I would appreciate citation/reference to this repository. 
