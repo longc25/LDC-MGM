@@ -10,6 +10,7 @@ cd LDC-MGM/dist
 pip install DensityClust-1.0.7.tar.gz
 
 or you can install LDC package directly in pypi.com. using:
+
 pip install DensityClust==1.0.7
 
 
