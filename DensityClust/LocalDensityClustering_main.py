@@ -7,19 +7,26 @@ from DensityClust.clustring_subfunc import *
 def localDenCluster(data_name, para=None, mask_name=None, outcat_name=None, outcat_wcs_name=None):
     """
     LDC algorithm
-    :param data_name: 待检测数据的路径(str)，fits文件
-    :param para: 算法参数，dict
+    :param data_name: str [*.fits]
+        Path to the detections file.
+    :param para: dict
+        The parameters of LDC algorithm
         para.rhomin: Minimum density
         para.deltamin: Minimum delta
         para.v_min: Minimum volume
         para.rms: The noise level of the data, used for data truncation calculation
-        para.sigma: 密度估计的窗口
-    :param mask_name: 掩模数据的保存路径(str)
-    :param outcat_name: 基于像素单位的核表保存路径(str)
-    :param outcat_wcs_name: 基于wcs的核表保存路径(str)
+        para.dc: dc is a cutoff distancein the process of density estimation.
+    :param mask_name: str [*.fits]
+        Path to the mask file.
+    :param outcat_name: str [*.txt]
+        Path to the catalog of clumps, the pixel coordinate system.
+    :param outcat_wcs_name: str [*.txt]
+        Path to the catalog of clumps, the wcs coordinate system.
     :return:
+    
     """
-    data_port_dir = data_name.replace('.fits', '')  # 默认保存路径
+    
+    data_port_dir = data_name.replace('.fits', '')  # Default save path
     if para is None:
         para = {"gradmin": 0.01, "rhomin": 0.8, "deltamin": 4, "v_min": 27, "rms": 0.46, "dc": 0.6, "is_plot": 0}
 
